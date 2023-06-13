@@ -6,7 +6,7 @@ import styles from "@/style"
     <div class="flex flex-col" id="about">
         <div class="flex gap-5 mt-32">
             <span :class='`${styles.headingNumber} text-blue-200 my-auto`'>01.</span>
-            <span :class='styles.heading1'>About me</span>
+            <span class="font-gilroy font-extrabold text-[48px] text-white">About me</span>
         </div>
         <div :class="`${styles.paragraph} flex flex-col gap-10 xl:w-[60%] mt-10 text-justify`">
             <p>
@@ -29,7 +29,7 @@ import styles from "@/style"
         </div>
         <div class="mt-20">
             <div class="flex flex-col gap-3">
-                <span :class="styles.heading2">Developer Profile</span>
+                <span class="font-gilroy font-extrabold text-[40px] text-white">Developer Profile</span>
                 <span :class="styles.paragraph">I am experienced in the following
                     fields</span>
             </div>
@@ -41,7 +41,7 @@ import styles from "@/style"
                     <div class="relative flex gap-8">
                         <img src="@/assets/images/react.svg">
                         <div class="relative flex flex-col">
-                            <span :class="`${styles.heading2} z-10 w-auto`">Frontend</span>
+                            <span class="font-gilroy font-extrabold text-[40px] text-white z-10 w-auto">Frontend</span>
                             <div class="absolute p-2 w-[110%] -ml-[5%] bg-blue-300 top-9 z-0"> </div>
                             <span class="font-gilroy font-extrabold text-white text-[23px] -mt-1">React, Vue</span>
                         </div>
@@ -64,7 +64,7 @@ import styles from "@/style"
                     <div class="relative flex gap-12">
                         <img src="@/assets/images/django.svg">
                         <div class="relative flex flex-col">
-                            <span :class="`${styles.heading2} z-10 w-auto`">Backend</span>
+                            <span class="font-gilroy font-extrabold text-[40px] text-white z-10 w-auto">Backend</span>
                             <div class="absolute p-2 w-[110%] -ml-[5%] bg-orange top-9 z-0"> </div>
                             <span class="font-gilroy font-extrabold text-white text-[23px] -mt-1">Django, Rails</span>
                         </div>
@@ -86,7 +86,7 @@ import styles from "@/style"
                     <div class="relative flex gap-8">
                         <img src="@/assets/images/figma.svg">
                         <div class="relative flex flex-col">
-                            <span :class="`${styles.heading2} z-10 w-auto`">UI Design</span>
+                            <span class="font-gilroy font-extrabold text-[40px] text-white z-10 w-auto">UI Design</span>
                             <div class="absolute p-2 w-[110%] -ml-[5%] bg-pink top-9 z-0"> </div>
                             <span class="font-gilroy font-extrabold text-white text-[23px] -mt-1">Figma</span>
                         </div>
