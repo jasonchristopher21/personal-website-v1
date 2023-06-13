@@ -2,6 +2,7 @@
   <Navbar />
   <div class="bg-grey-300 p-32">
     <Hero />
+    <About />
   </div>
 </template>
 

@@ -2,7 +2,9 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss', 
-    ['nuxt-font-loader', { url: '~/assets/fonts/font-face.css' }]],
+    ['nuxt-font-loader', { url: '~/assets/fonts/font-face.css' }],
+    '@pinia/nuxt',
+  ],
   components: [
     { path: '~/components/special-components', prefix: 'Special' },
     '~/components'
