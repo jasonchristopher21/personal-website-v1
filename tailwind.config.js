@@ -19,7 +19,7 @@ module.exports = {
       purple: '#C792EA',
       yellow: '#FFCB64',
       pink: '#DF058D',
-      white: "#FFFFFF",
+      white: "#F8F8FF",
     },
     fontFamily: {
       gilroy: ['Gilroy', 'sans-serif'],
