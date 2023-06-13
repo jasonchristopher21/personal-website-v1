@@ -22,9 +22,9 @@ function scrollToContact() {
         <span class="text-[20px] font-metropolis font-bold">Jason Christopher</span>
         <div class="flex justify-normal gap-12 mt-1 text-[16px] font-monospace font-bold text-grey-100">
             <button class="transition-all hover:text-yellow" @click="scrollToAbout">about</button>
-            <button class="transition-all hover:text-yellow">experience</button>
-            <button class="transition-all hover:text-yellow">projects</button>
-            <button class="transition-all hover:text-yellow">contact</button>
+            <button class="transition-all hover:text-yellow" @click="scrollToWork">experience</button>
+            <button class="transition-all hover:text-yellow" @click="scrollToProjects">projects</button>
+            <button class="transition-all hover:text-yellow" @click="scrollToContact">contact</button>
         </div>
     </div>
 </template>
