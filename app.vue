@@ -1,7 +1,11 @@
 <template>
-  <div class="bg-[#252526]">
-    <div class="text-blue-500 text-4xl">
-      Hello world
-    </div>
+  <Navbar />
+  <div class="bg-grey-300 p-32">
+    <Hero />
   </div>
 </template>
+
+<script setup>
+import Navbar from './components/Navbar.vue'
+import Hero from './components/Hero.vue';
+</script>
