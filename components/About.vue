@@ -1,12 +1,14 @@
-<script setup></script>
+<script setup>
+import styles from "@/style"
+</script>
 
 <template>
     <div class="flex flex-col" id="about">
-        <div class="flex gap-5 mt-36">
-            <span class="font-monospace font-bold text-[34px] text-blue-200 my-auto">01.</span>
-            <span class="font-gilroy font-extrabold text-[48px] text-white">About me</span>
+        <div class="flex gap-5 mt-32">
+            <span :class='`${styles.headingNumber} text-blue-200 my-auto`'>01.</span>
+            <span :class='styles.heading1'>About me</span>
         </div>
-        <div class="flex flex-col gap-10 xl:w-[60%] font-metropolis text-[24px] text-white mt-10 text-justify">
+        <div :class="`${styles.paragraph} flex flex-col gap-10 xl:w-[60%] mt-10 text-justify`">
             <p>
                 I am a penultimate computer science undergraduate at the National University of Singapore. I am passionate
                 about building software that solves real-world problems and improves the lives of others.
@@ -27,8 +29,8 @@
         </div>
         <div class="mt-20">
             <div class="flex flex-col gap-3">
-                <span class="font-gilroy font-extrabold text-[48px] text-white">Developer Profile</span>
-                <span class="font-metropolis font-normal text-[24px] text-white">I am experienced in the following
+                <span :class="styles.heading2">Developer Profile</span>
+                <span :class="styles.paragraph">I am experienced in the following
                     fields</span>
             </div>
             <div class="grid grid-cols-3 grid-flow-col gap-10 mt-10">
@@ -39,21 +41,21 @@
                     <div class="relative flex gap-8">
                         <img src="@/assets/images/react.svg">
                         <div class="relative flex flex-col">
-                            <span class="font-gilroy font-extrabold text-white text-[42px] z-10">Frontend</span>
+                            <span :class="`${styles.heading2} z-10 w-auto`">Frontend</span>
                             <div class="absolute p-2 w-[110%] -ml-[5%] bg-blue-300 top-9 z-0"> </div>
                             <span class="font-gilroy font-extrabold text-white text-[23px] -mt-1">React, Vue</span>
                         </div>
                     </div>
                     <div class="mt-5">
-                        <span class="font-monospace text-grey-100 text-[20px]">&lt;Text&gt;</span>
+                        <span :class="`${styles.codeParagraph}  text-grey-100 text-[18px]`">&lt;Text&gt;</span>
                         <div
-                            class="pl-5 border-l-2 border-grey-100 my-2 ml-2 font-monospace text-white text-[20px] font-medium ">
+                            :class="`${styles.codeParagraph} text-white pl-5 border-l-2 border-grey-100 my-2 ml-2`">
                             <p>
                                 I worked with React and Vue for Frontend Development. I also developed multiple projects on
                                 them
                             </p>
                         </div>
-                        <span class="font-monospace text-grey-100 text-[20px]">&lt;/Text&gt;</span>
+                        <span :class="`${styles.codeParagraph}  text-grey-100 text-[18px]`">&lt;/Text&gt;</span>
                     </div>
                 </div>
 
@@ -62,21 +64,20 @@
                     <div class="relative flex gap-12">
                         <img src="@/assets/images/django.svg">
                         <div class="relative flex flex-col">
-                            <span class="font-gilroy font-extrabold text-white text-[42px] z-10 w-auto">Backend</span>
-                            <div class="absolute p-2 w-[85%] -ml-[5%] bg-orange top-9 z-0"> </div>
-                            <span class="font-gilroy font-extrabold text-white text-[23px] -mt-1">Django, Ruby on
-                                Rails</span>
+                            <span :class="`${styles.heading2} z-10 w-auto`">Backend</span>
+                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-orange top-9 z-0"> </div>
+                            <span class="font-gilroy font-extrabold text-white text-[23px] -mt-1">Django, Rails</span>
                         </div>
                     </div>
                     <div class="mt-5">
-                        <span class="font-monospace text-grey-100 text-[20px]">"""</span>
-                        <div class="my-2 ml-2 font-monospace text-white text-[20px] font-medium ">
+                        <span :class="`${styles.codeParagraph}  text-grey-100 text-[18px]`">"""</span>
+                        <div :class="`${styles.codeParagraph} text-white my-2 `">
                             <p>
                                 I worked with React and Vue for Frontend Development. I also developed multiple projects on
                                 them
                             </p>
                         </div>
-                        <span class="font-monospace text-grey-100 text-[20px]">"""</span>
+                        <span :class="`${styles.codeParagraph}  text-grey-100 text-[18px]`">"""</span>
                     </div>
                 </div>
 
@@ -85,21 +86,21 @@
                     <div class="relative flex gap-8">
                         <img src="@/assets/images/figma.svg">
                         <div class="relative flex flex-col">
-                            <span class="font-gilroy font-extrabold text-white text-[40px] z-10">UI/UX Design</span>
+                            <span :class="`${styles.heading2} z-10 w-auto`">UI Design</span>
                             <div class="absolute p-2 w-[110%] -ml-[5%] bg-pink top-9 z-0"> </div>
                             <span class="font-gilroy font-extrabold text-white text-[23px] -mt-1">Figma</span>
                         </div>
                     </div>
                     <div class="mt-5">
-                        <span class="font-monospace text-grey-100 text-[20px]">&lt;span&gt;</span>
+                        <span :class="`${styles.codeParagraph}  text-grey-100 text-[18px]`">&lt;span&gt;</span>
                         <div
-                            class="pl-5 border-l-2 border-grey-100 my-2 ml-2 font-monospace text-white text-[20px] font-medium ">
+                        :class="`${styles.codeParagraph} text-white pl-5 border-l-2 border-grey-100 my-2 ml-2`">
                             <p>
                                 I worked with React and Vue for Frontend Development. I also developed multiple projects on
                                 them
                             </p>
                         </div>
-                        <span class="font-monospace text-grey-100 text-[20px]">&lt;/span&gt;</span>
+                        <span :class="`${styles.codeParagraph}  text-grey-100 text-[18px]`">&lt;/span&gt;</span>
                     </div>
                 </div>
         </div>
