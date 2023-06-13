@@ -17,5 +17,9 @@
     "nuxt-font-loader": "^2.3.1",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.11",
+    "pinia": "^2.1.3"
   }
 }

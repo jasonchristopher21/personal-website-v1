@@ -10,8 +10,9 @@ module.exports = {
         300: '#252526',
       },
       blue: {
-        100: '#5C9DFF',
-        200: '#2C49D8',
+        100: '#70DDF1',
+        200: '#5C9DFF',
+        300: '#2C49D8',
       },
       orange: '#FF6B2B',
       green: '#B9E88D',
