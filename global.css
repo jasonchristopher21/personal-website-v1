@@ -1,0 +1,5 @@
+@font-face {
+    font-family: "Oxygen";
+    src: local("Oxygen"),
+     url(~assets/Oxygen/Oxygen-Regular.ttf) format("truetype");
+}
