@@ -1,75 +1,75 @@
 @font-face {
     font-family: "Gilroy";
     src: local("Gilroy"), local("Gilroy-ExtraBold"),
-     url(/fonts/Gilroy-ExtraBold.otf) format("opentype");
+     url(/Gilroy-ExtraBold.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Metropolis";
     font-weight: 400;
     src: local("Metropolis"), local("Metropolis-Regular"),
-     url(/fonts/Metropolis-Regular.otf) format("opentype");
+     url(/Metropolis-Regular.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Metropolis";
     font-weight: 500;
     src: local("Metropolis"), local("Metropolis-Medium"),
-     url(/fonts/Metropolis-Medium.otf) format("opentype");
+     url(/Metropolis-Medium.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Metropolis";
     font-weight: 600;
     src: local("Metropolis"), local("Metropolis-SemiBold"),
-     url(/fonts/Metropolis-SemiBold.otf) format("opentype");
+     url(/Metropolis-SemiBold.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Metropolis";
     font-weight: 700;
     src: local("Metropolis"), local("Metropolis-Bold"),
-     url(/fonts/Metropolis-Bold.otf) format("opentype");
+     url(/Metropolis-Bold.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Metropolis";
     font-weight: 800;
     src: local("ExtraBold"), local("Metropolis-ExtraBold"),
-     url(/fonts/Metropolis-ExtraBold.otf) format("opentype");
+     url(/Metropolis-ExtraBold.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Roboto Mono";
     font-weight: 400;
     src: local("Roboto Mono"), local("RobotoMono-Regular"),
-     url(/fonts/RobotoMono-Regular.ttf) format("truetype");
+     url(/RobotoMono-Regular.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Roboto Mono";
     font-weight: 500;
     src: local("Roboto Mono"), local("RobotoMono-Medium"),
-     url(/fonts/RobotoMono-Medium.ttf) format("truetype");
+     url(/RobotoMono-Medium.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Roboto Mono";
     font-weight: 600;
     src: local("Roboto Mono"), local("RobotoMono-SemiBold"),
-     url(/fonts/RobotoMono-SemiBold.ttf) format("truetype");
+     url(/RobotoMono-SemiBold.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Roboto Mono";
     font-weight: 700;
     src: local("Roboto Mono"), local("RobotoMono-Bold"),
-     url(/fonts/RobotoMono-Bold.ttf) format("truetype");
+     url(/RobotoMono-Bold.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Roboto Mono";
     font-weight: 800;
     src: local("Roboto Mono"), local("RobotoMono-ExtraBold"),
-     url(/fonts/RobotoMono-ExtraBold.ttf) format("truetype");
+     url(/RobotoMono-ExtraBold.ttf) format("truetype");
 }
