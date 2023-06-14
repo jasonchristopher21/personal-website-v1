@@ -28,7 +28,7 @@ import styles from "@/style"
             </p>
         </div>
         <div class="mt-20">
-            <div class="flex flex-col gap-3">
+            <div class="flex flex-col gap-3 mt-2">
                 <span class="font-gilroy font-extrabold text-[40px] text-white">Developer Profile</span>
                 <span :class="styles.paragraph">I am experienced in the following
                     fields</span>
@@ -105,5 +105,4 @@ import styles from "@/style"
                 </div>
         </div>
     </div>
-    <div class="h-[100px]"></div>
 </div></template>

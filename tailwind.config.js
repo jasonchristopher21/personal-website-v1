@@ -24,7 +24,7 @@ module.exports = {
     fontFamily: {
       gilroy: ['Gilroy', 'sans-serif'],
       metropolis: ['Metropolis', 'sans-serif'],
-      monospace: ['Roboto Mono', 'serif'],
+      monospace: ['Roboto Mono', 'monospace'],
     },
   },
   plugins: [],
