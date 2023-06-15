@@ -1,47 +1,110 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Navbar from './components/Navbar.vue';
+import About from "./components/About.vue"
+import Hero from './components/Hero.vue';
+import Experience from './components/Experience.vue';
+import Projects from './components/Projects.vue';
+import Contact from './components/Contact.vue';
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <Navbar />
+  <div class="bg-grey-300 p-32">
+    <Hero />
+    <About />
+    <Experience />
+    <Projects />
+    <Contact />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style lang="scss">
+
+@font-face {
+    font-family: "Gilroy";
+    font-display: swap;
+    font-style: normal;
+    src: url("@/fonts/Gilroy-ExtraBold.otf") format("opentype");
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+@font-face {
+    font-family: "Metropolis";
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: url("@/fonts/Metropolis-Regular.otf") format("opentype");
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+@font-face {
+    font-family: "Metropolis";
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+    src: url("@/fonts/Metropolis-Medium.otf") format("opentype");
 }
+
+@font-face {
+    font-family: "Metropolis";
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+    src: url("@/fonts/Metropolis-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Metropolis";
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+    src: url("@/fonts/Metropolis-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Metropolis";
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+    src: url("@/fonts/Metropolis-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+    src: url("@/fonts/RobotoMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+    src: url("@/fonts/RobotoMono-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+    src:url("@/fonts/RobotoMono-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+    src: url("@/fonts/RobotoMono-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+    src: url("@/fonts/RobotoMono-ExtraBold.ttf") format("truetype");
+}
+
 </style>
