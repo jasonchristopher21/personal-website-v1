@@ -99,12 +99,4 @@ import Contact from './components/Contact.vue';
     src: url("@/fonts/RobotoMono-Bold.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: "Roboto Mono";
-    font-weight: 800;
-    font-display: swap;
-    font-style: normal;
-    src: url("@/fonts/RobotoMono-ExtraBold.ttf") format("truetype");
-}
-
 </style>
