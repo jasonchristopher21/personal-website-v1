@@ -4,11 +4,15 @@ import styles from "@/style"
 
 <template>
     <div class="flex flex-col" id="about">
+
+        <!-- About Me Heading -->
         <div class="flex gap-5 mt-32">
             <span :class='`${styles.headingNumber} text-blue-200 my-auto`'>01.</span>
-            <span class="font-gilroy font-extrabold text-[48px] text-white">About me</span>
+            <span :class="styles.heading1">About me</span>
         </div>
-        <div :class="`${styles.paragraph} flex flex-col gap-10 xl:w-[60%] mt-10 text-justify`">
+
+        <!-- Paragraph -->
+        <div :class="`${styles.paragraph} flex flex-col gap-7 xl:w-[60%] mt-10 text-justify`">
             <p>
                 I am a penultimate computer science undergraduate at the National University of Singapore. I am passionate
                 about building software that solves real-world problems and improves the lives of others.
@@ -27,23 +31,29 @@ import styles from "@/style"
                 worked on projects that involve them, such as building a search engine by prioritising query relevance.
             </p>
         </div>
+
+        <!-- Developer Profile -->
         <div class="mt-20">
+
+            <!-- Profile Heading -->
             <div class="flex flex-col gap-3 mt-2">
                 <span class="font-gilroy font-extrabold text-[40px] text-white">Developer Profile</span>
                 <span :class="styles.paragraph">I am experienced in the following
                     fields</span>
             </div>
+
+            <!-- Developer Profile Cards -->
+            <!-- TODO: UPDATE TEXT -->
             <div class="grid grid-cols-3 grid-flow-col gap-10 mt-10">
-                <!-- TODO: UPDATE TEXT -->
 
                 <!-- Frontend card -->
                 <div class="transition-all border border-white rounded-xl px-10 py-8 items-center hover:bg-grey-200">
-                    <div class="relative flex gap-8">
+                    <div class="relative flex gap-[10%]">
                         <img src="@/assets/images/react.svg">
                         <div class="relative flex flex-col">
-                            <span class="font-gilroy font-extrabold text-[40px] text-white z-10 w-auto">Frontend</span>
-                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-blue-300 top-9 z-0"> </div>
-                            <span class="font-gilroy font-extrabold text-white text-[23px] -mt-1">React, Vue</span>
+                            <span :class="`${styles.heading3} z-10 w-auto`">Frontend</span>
+                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-blue-300 top-7 z-0"> </div>
+                            <span :class="`${styles.heading5} -mt-1`">React, Vue</span>
                         </div>
                     </div>
                     <div class="mt-5">
@@ -81,7 +91,7 @@ import styles from "@/style"
                     </div>
                 </div>
 
-                <!-- Frontend card -->
+                <!-- UI Design card -->
                 <div class="transition-all border border-white rounded-xl px-10 py-8 items-center hover:bg-grey-200">
                     <div class="relative flex gap-8">
                         <img src="@/assets/images/figma.svg">
