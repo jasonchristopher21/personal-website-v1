@@ -49,11 +49,11 @@ import styles from "@/style"
                 <!-- Frontend card -->
                 <div class="transition-all border border-white rounded-xl px-10 py-8 items-center hover:bg-grey-200">
                     <div class="relative flex gap-[10%]">
-                        <img src="@/assets/images/react.svg">
+                        <img src="@/assets/images/react.svg" class="xl:w-auto lg:w-[4.5vw] sm:w-auto">
                         <div class="relative flex flex-col">
-                            <span class="font-gilroy font-extrabold text-white lg:text-[2.3vw] text-[40px] z-10 w-auto">Frontend</span>
-                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-blue-300 lg:top-[2vw] top-9 z-0"> </div>
-                            <span class="font-gilroy font-extrabold text-white lg:text-[1.5vw] text-[24px] -mt-1">React, Vue</span>
+                            <span class="font-gilroy font-extrabold text-white lg:text-[2.5vw] xl:text-[40px] sm:text-[40px] z-10 w-auto">Frontend</span>
+                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-blue-300 lg:top-[2.2vw] xl:top-9  sm:top-9 z-0"> </div>
+                            <span class="font-gilroy font-extrabold text-white lg:text-[1.5vw] xl:text-[24px] -mt-0.5 sm:text-[24px]">React, Vue</span>
                         </div>
                     </div>
                     <div class="mt-5">
@@ -71,12 +71,12 @@ import styles from "@/style"
 
                 <!-- Backend card -->
                 <div class="transition-all border border-white rounded-xl px-10 py-8 items-center hover:bg-grey-200">
-                    <div class="relative flex gap-[10%]">
-                        <img src="@/assets/images/django.svg">
+                    <div class="relative flex gap-[13%]">
+                        <img src="@/assets/images/django.svg" class="xl:w-auto lg:w-[4.5vw] sm:w-auto">
                         <div class="relative flex flex-col">
-                            <span class="font-gilroy font-extrabold text-white lg:text-[2.3vw] text-[40px] z-10 w-auto">Backend</span>
-                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-orange lg:top-[2.1vw] top-9 z-0"> </div>
-                            <span class="font-gilroy font-extrabold text-white lg:text-[1.5vw] text-[24px] -mt-1">Django, Rails</span>
+                            <span class="font-gilroy font-extrabold text-white lg:text-[2.5vw] xl:text-[40px] z-10 w-auto sm:text-[40px]">Backend</span>
+                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-orange lg:top-[2.2vw] xl:top-9 sm:top-9 z-0"> </div>
+                            <span class="font-gilroy font-extrabold text-white lg:text-[1.5vw] xl:text-[24px] -mt-0.5 sm:text-[24px]">Django, Rails</span>
                         </div>
                     </div>
                     <div class="mt-5">
@@ -94,11 +94,11 @@ import styles from "@/style"
                 <!-- UI Design card -->
                 <div class="transition-all border border-white rounded-xl px-10 py-8 items-center hover:bg-grey-200">
                     <div class="relative flex gap-[8%]">
-                        <img src="@/assets/images/figma.svg">
+                        <img src="@/assets/images/figma.svg" class="xl:w-auto lg:w-[5.5vw] sm:w-auto -mt-1">
                         <div class="relative flex flex-col">
-                            <span class="font-gilroy font-extrabold text-white lg:text-[2.3vw] text-[40px] z-10 w-auto">UI/UX</span>
-                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-pink lg:top-[2.1vw] top-9 z-0"> </div>
-                            <span class="font-gilroy font-extrabold text-white lg:text-[1.5vw] text-[24px] -mt-1">Figma</span>
+                            <span class="font-gilroy font-extrabold text-white lg:text-[2.5vw] xl:text-[40px] z-10 w-auto sm:text-[40px]">UI/UX</span>
+                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-pink lg:top-[2.2vw] xl:top-9  sm:top-9 z-0"> </div>
+                            <span class="font-gilroy font-extrabold text-white lg:text-[1.5vw] xl:text-[24px] -mt-0.5 sm:text-[24px]">Figma</span>
                         </div>
                     </div>
                     <div class="mt-5">
