@@ -28,7 +28,7 @@ function viewLink(link: string) {
                     class="transition-all w-[40rem] z-0 opacity-70 brightness-50 hover:opacity-100 hover:brightness-100 drop-shadow-[4px_4px_20px_rgba(0,0,0,0.5)] 2xl:w-[50rem] mr-0 ml-auto" />
 
                 <div v-if="project.display === 'right'"
-                    class="transition-all absolute z-10 bg-grey-200 top-[2rem] 2xl:top-[3rem] right-0 ml-20 w-[40rem]">
+                    class="transition-all absolute z-10 bg-grey-200 top-[2rem] 2xl:top-[5rem] right-0 ml-20 w-[40rem]">
                     <div class="flex flex-col text-right p-10">
                         <span :class="`${styles.heading2}`">{{ project.title }}</span>
                         <span class="font-metropolis font-bold text-[20px] text-white">{{ project.subtitle }}</span>
@@ -46,7 +46,7 @@ function viewLink(link: string) {
                         </div>
                     </div>
                 </div>
-                <div v-else class="transition-all absolute z-10 bg-grey-200 top-[2rem] 2xl:top-[3rem] mr-20 w-[40rem]">
+                <div v-else class="transition-all absolute z-10 bg-grey-200 top-[2rem] 2xl:top-[5rem] mr-20 w-[40rem]">
                     <div class="flex flex-col text-left p-10">
                         <span :class="`${styles.heading2}`">{{ project.title }} </span>
                         <span class="font-metropolis font-bold text-[20px] text-white">{{ project.subtitle }}</span>
@@ -96,7 +96,8 @@ function viewLink(link: string) {
             </div>
 
             <!-- Other projects Button -->
-            <div class="text-center w-full">
+            <!-- TOOD: Unhide this in the next milestone when the projects page is completed -->
+            <div class="text-center w-full hidden">
                 <button class="mt-10 py-4 px-20 bg-grey-200 rounded-xl">
                     <span class="font-metropolis font-semibold text-[24px] text-white">View all projects</span>
                 </button>
