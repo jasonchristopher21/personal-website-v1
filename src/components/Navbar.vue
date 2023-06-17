@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import github from "@/assets/images/github.png"
-import { randomColor } from "@/style"
 
 function scrollToAbout() {
     const aboutElement = document.getElementById("about")
