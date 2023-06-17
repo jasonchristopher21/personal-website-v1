@@ -45,7 +45,7 @@ const resumeHover = ref(false)
         <div class="md:flex justify-normal gap-12 mt-1 text-[16px] font-monospace font-bold text-grey-100 hidden">
             <button class="transition-all hover:text-yellow" @click="scrollToAbout" @mouseover="aboutHover = true"
                 @mouseleave="aboutHover = false">
-                <span :class="aboutHover ? 'hidden' : 'mr-2'">//</span>
+                <span :class="aboutHover ? 'text-grey-300 mr-2' : 'mr-2'">//</span>
                 <span>about</span>
             </button>
             
