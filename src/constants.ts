@@ -1,5 +1,6 @@
 import marinachain from "@/assets/images/marinachain.jpg"
 import nus from "@/assets/images/nus.png"
+import pinus_study from "@/assets/images/projects/pinus_study.png"
 
 export const experience = [
     [
@@ -80,4 +81,36 @@ export const experience = [
             ]
         },
     ],
+]
+
+export 
+const featuredProjects = [
+    {
+        display: "right",
+        title: "PINUS Study",
+        subtitle: "A study forum for NUS Indonesian Students",
+        image: pinus_study,
+        description: [
+            "Collaborated with 8 developers",
+            "Implemented a customisable Rich-text editor",
+        ],
+        stackLogos: [
+
+        ],
+        github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
+    },
+    {
+        display: "left",
+        title: "PINUS Study",
+        subtitle: "A study forum for NUS Indonesian Students",
+        image: pinus_study,
+        description: [
+            "Collaborated with 8 developers",
+            "Implemented a customisable Rich-text editor",
+        ],
+        stackLogos: [
+
+        ],
+        github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
+    }
 ]
