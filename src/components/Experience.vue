@@ -12,7 +12,7 @@ const pageNumber = ref(0)
         <!-- Heading -->
         <div class="flex gap-5 mt-32">
             <span :class='`${styles.headingNumber} text-purple my-auto`'>02.</span>
-            <span class="font-gilroy font-extrabold text-[48px] text-white">Work Experience</span>
+            <span :class="styles.heading1">Work Experience</span>
         </div>
 
         <!-- Tabs -->
