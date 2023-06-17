@@ -94,7 +94,9 @@ export const featuredProjects = [
             "Implemented a customisable Rich-text editor",
         ],
         stackLogos: [
-
+            "React",
+            "Slate JS",
+            "TypeScript"
         ],
         github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
     },
@@ -108,7 +110,8 @@ export const featuredProjects = [
             "Implemented a customisable Rich-text editor",
         ],
         stackLogos: [
-
+            "Vue",
+            "Django"
         ],
         github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
     }

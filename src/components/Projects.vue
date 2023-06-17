@@ -28,29 +28,39 @@ function viewLink(link: string) {
                     class="transition-all w-[40rem] z-0 opacity-70 brightness-50 hover:opacity-100 hover:brightness-100 drop-shadow-[4px_4px_20px_rgba(0,0,0,0.5)] 2xl:w-[50rem] mr-0 ml-auto" />
 
                 <div v-if="project.display === 'right'"
-                    class="transition-all absolute z-10 bg-grey-200 top-[5rem] 2xl:top-[6rem] right-0 ml-20 w-[40rem]">
+                    class="transition-all absolute z-10 bg-grey-200 top-[2rem] 2xl:top-[3rem] right-0 ml-20 w-[40rem]">
                     <div class="flex flex-col text-right p-10">
-                        <span :class="`${styles.heading2}`">PINUS Study</span>
-                        <span class="font-metropolis font-bold text-[20px] text-white">A study forum for NUS Indonesian
-                            Students</span>
+                        <span :class="`${styles.heading2}`">{{ project.title }}</span>
+                        <span class="font-metropolis font-bold text-[20px] text-white">{{ project.subtitle }}</span>
                         <div class="flex flex-col mt-5">
-                            <span class="font-metropolis font-medium text-[20px] text-white">Collaborated with 8
-                                developers</span>
-                            <span class="font-metropolis font-medium text-[20px] text-white">Implemented a Customisable
-                                Rich-text editor</span>
+                            <span v-for="desc in project.description"
+                                class="font-metropolis font-medium text-[20px] text-white">{{ desc }}</span>
+                        </div>
+                        <div class="flex justify-end gap-8 mt-5">
+                            <span v-for="stack in project.stackLogos"
+                                :class="`${styles.codeParagraph} text-white opacity-40 hover:opacity-100 my-auto`">{{ stack
+                                }}</span>
+                            <button class="transition-all opacity-40 hover:opacity-100" @click="viewLink(project.github)">
+                                <img :src="github" class="w-10 h-10" />
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div v-else class="transition-all absolute z-10 bg-grey-200 top-[5rem] 2xl:top-[6rem] mr-20 w-[40rem]">
+                <div v-else class="transition-all absolute z-10 bg-grey-200 top-[2rem] 2xl:top-[3rem] mr-20 w-[40rem]">
                     <div class="flex flex-col text-left p-10">
-                        <span :class="`${styles.heading2}`">PINUS Study</span>
-                        <span class="font-metropolis font-bold text-[20px] text-white">A study forum for NUS Indonesian
-                            Students</span>
+                        <span :class="`${styles.heading2}`">{{ project.title }} </span>
+                        <span class="font-metropolis font-bold text-[20px] text-white">{{ project.subtitle }}</span>
                         <div class="flex flex-col mt-5">
-                            <span class="font-metropolis font-medium text-[20px] text-white">Collaborated with 8
-                                developers</span>
-                            <span class="font-metropolis font-medium text-[20px] text-white">Implemented a Customisable
-                                Rich-text editor</span>
+                            <span v-for="desc in project.description"
+                                class="font-metropolis font-medium text-[20px] text-white">{{ desc }}</span>
+                        </div>
+                        <div class="flex justify-start gap-8 mt-5">
+                            <button class="transition-all opacity-40 hover:opacity-100" @click="viewLink(project.github)">
+                                <img :src="github" class="w-10 h-10" />
+                            </button>
+                            <span v-for="stack in project.stackLogos"
+                                :class="`${styles.codeParagraph} text-white opacity-40 hover:opacity-100 my-auto`">{{ stack
+                                }}</span>
                         </div>
                     </div>
                 </div>
@@ -65,7 +75,8 @@ function viewLink(link: string) {
             <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-flow-col gap-10 mt-10">
                 <div v-for="project in otherProjects"
                     class="transition-all border border-white rounded-xl items-center hover:bg-grey-200">
-                    <img :src="project.image" class="rounded-t-xl transition-all opacity-70 brightness-50 hover:opacity-100 hover:brightness-100" />
+                    <img :src="project.image"
+                        class="rounded-t-xl transition-all opacity-70 brightness-50 hover:opacity-100 hover:brightness-100" />
                     <div class="px-8 py-5">
                         <div class="flex flex-col gap-1">
                             <span :class="styles.heading3">{{ project.title }}</span>
