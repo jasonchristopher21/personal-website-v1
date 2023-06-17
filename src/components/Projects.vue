@@ -65,7 +65,7 @@ function viewLink(link: string) {
             <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-flow-col gap-10 mt-10">
                 <div v-for="project in otherProjects"
                     class="transition-all border border-white rounded-xl items-center hover:bg-grey-200">
-                    <img :src="project.image" class="rounded-t-xl" />
+                    <img :src="project.image" class="rounded-t-xl transition-all opacity-70 brightness-50 hover:opacity-100 hover:brightness-100" />
                     <div class="px-8 py-5">
                         <div class="flex flex-col gap-1">
                             <span :class="styles.heading3">{{ project.title }}</span>
