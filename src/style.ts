@@ -10,4 +10,6 @@ const styles = {
     headingNumber: "font-monospace font-bold text-[30px]",
 }
 
+const highlight_colors = ["blue-100", "yellow", "green", "purple"]
+
 export default styles;

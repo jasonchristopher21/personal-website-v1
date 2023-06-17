@@ -102,16 +102,15 @@ export const featuredProjects = [
     },
     {
         display: "left",
-        title: "PINUS Study",
-        subtitle: "A study forum for NUS Indonesian Students",
+        title: "DiscountLah",
+        subtitle: "A one-stop app for managing your coupons",
         image: pinus_study,
         description: [
-            "Collaborated with 8 developers",
-            "Implemented a customisable Rich-text editor",
+            "Integrated Google Maps API with current location",
+            "Awarded Advanced level (Apollo) for NUS CP2106 Orbital",
         ],
         stackLogos: [
-            "Vue",
-            "Django"
+            "React Native", "Firebase", "Google Maps"
         ],
         github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
     }

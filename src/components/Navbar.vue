@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import github from "@/assets/images/github.png"
+import { randomColor } from "@/style"
 
 function scrollToAbout() {
     const aboutElement = document.getElementById("about")
@@ -31,43 +33,66 @@ function viewResume() {
     window.open(resumeLink, "_blank")
 }
 
+function viewGithub() {
+    window.open('https://github.com/jasonchristopher21', '_blank')
+}
+
 const aboutHover = ref(false)
 const workHover = ref(false)
 const projectsHover = ref(false)
 const contactHover = ref(false)
 const resumeHover = ref(false)
+const githubHover = ref(false)
 
+const buttons = [
+    {
+        name: "about",
+        hover: aboutHover,
+        action: scrollToAbout,
+    },
+    {
+        name: "experience",
+        hover: workHover,
+        action: scrollToWork,
+    },
+    {
+        name: "projects",
+        hover: projectsHover,
+        action: scrollToProjects,
+    },
+    {
+        name: "contact",
+        hover: contactHover,
+        action: scrollToContact,
+    },
+    {
+        name: "resume",
+        hover: resumeHover,
+        action: viewResume,
+    },
+]
 </script>
 
 <template>
     <div class="flex justify-between pl-14 md:px-14 2xl:px-20 pt-8 pb-12 bg-grey-300 text-white z-50 fixed w-full">
+
+        <!-- Name on the left of navbar -->
         <button class="text-[20px] font-metropolis font-bold" @click="scrollToHero">Jason Christopher</button>
+
+        <!-- Navbar Buttons -->
         <div class="md:flex justify-normal gap-12 mt-1 text-[16px] font-monospace font-bold text-grey-100 hidden">
-            <button class="transition-all hover:text-yellow" @click="scrollToAbout" @mouseover="aboutHover = true"
-                @mouseleave="aboutHover = false">
-                <span :class="aboutHover ? 'text-grey-300 mr-2' : 'mr-2'">//</span>
-                <span>about</span>
+            <button v-for="item in buttons" class="transition-all hover:text-yellow" @click="item.action"
+                @mouseover="item.hover.value = true" @mouseleave="item.hover.value = false">
+                <span :class="item.hover.value ? 'transition-all text-grey-300' : 'transition-all mr-2'">
+                    //
+                </span>
+                <span :class="item.hover.value ? 'transition-all pr-4 -ml-2' : 'transition-all'">
+                    {{ item.name }}
+                </span>
             </button>
-            
-            <button class="transition-all hover:text-yellow" @click="scrollToWork" @mouseover="workHover = true"
-                @mouseleave="workHover = false">
-                <span :class="workHover ? 'text-grey-300 mr-2' : 'mr-2'">//</span>
-                <span>experience</span>
+            <button @click="viewGithub">
+                <img :src="github" class="w-8 h-8 opacity-60 hover:opacity-100 hover:scale-105" />
             </button>
-            <button class="transition-all hover:text-yellow" @click="scrollToProjects" @mouseover="projectsHover = true"
-                @mouseleave="projectsHover = false">
-                <span :class="projectsHover ? 'text-grey-300 mr-2' : 'mr-2'">//</span>
-                <span>projects</span>
-            </button>
-            <button class="transition-all hover:text-yellow" @click="scrollToContact" @mouseover="contactHover = true"
-                @mouseleave="contactHover = false">
-                <span :class="contactHover ? 'text-grey-300 mr-2' : 'mr-2'">//</span>
-                <span>contact</span>
-            </button>
-            <button class="transition-all hover:text-yellow" @click="viewResume" @mouseover="resumeHover = true"
-                @mouseleave="resumeHover = false">
-                <span :class="resumeHover ? 'text-grey-300 mr-2' : 'mr-2'">//</span>
-                <span>resume</span>
-            </button>
+        </div>
     </div>
-</div></template>
+</template>
