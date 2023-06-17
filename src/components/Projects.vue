@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import styles from "@/style"
-import { featuredProjects } from "@/constants"
+import { featuredProjects, otherProjects } from "@/constants"
+
+import pinus_study from "@/assets/images/projects/pinus_study.png"
+import github from "@/assets/images/github.png"
+
+function viewLink(link: string) {
+    window.open(link, "_blank")
+}
 </script>
 
 <template>
@@ -50,6 +57,39 @@ import { featuredProjects } from "@/constants"
             </div>
         </div>
 
-        <div class="h-[800px]"></div>
+        <!-- Other Projects -->
+        <div class="mt-20 2xl:px-20">
+            <span :class="styles.heading1">(Also) My Other Interesting Projects</span>
+
+            <!-- Other Projects Card -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-flow-col gap-10 mt-10">
+                <div v-for="project in otherProjects"
+                    class="transition-all border border-white rounded-xl items-center hover:bg-grey-200">
+                    <img :src="project.image" class="rounded-t-xl" />
+                    <div class="px-8 py-5">
+                        <div class="flex flex-col gap-1">
+                            <span :class="styles.heading3">{{ project.title }}</span>
+                            <span :class="styles.paragraph">{{ project.description }}</span>
+                        </div>
+                        <div class="flex justify-between mt-5">
+                            <div :class="`${styles.codeParagraph} flex gap-4 text-white my-auto`">
+                                <span v-for="stack in project.stack" class="transition-all opacity-40 hover:opacity-100">{{
+                                    stack }}</span>
+                            </div>
+                            <button class="transition-all opacity-40 hover:opacity-100" @click="viewLink(project.github)">
+                                <img :src="github" class="w-10 h-10" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other projects Button -->
+            <div class="text-center w-full">
+                <button class="mt-10 py-4 px-20 bg-grey-200 rounded-xl">
+                    <span class="font-metropolis font-semibold text-[24px] text-white">View all projects</span>
+                </button>
+            </div>
+        </div>
     </div>
 </template>

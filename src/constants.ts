@@ -10,11 +10,11 @@ export const experience = [
             company: "MarinaChain",
             link: "https://marinachain.io/",
             time: "May 2023 - Present",
-            description: 
-            [
-                "Worked on fullstack development with Vue and Django.",
-                "Yada yada yada bla bla bla baa baa black sheep",
-            ]
+            description:
+                [
+                    "Worked on fullstack development with Vue and Django.",
+                    "Yada yada yada bla bla bla baa baa black sheep",
+                ]
         },
         {
             image: nus,
@@ -22,11 +22,11 @@ export const experience = [
             company: "NUS CS2030S LLM Project",
             time: "June 2023 - Present",
             link: "https://marinachain.io/",
-            description: 
-            [
-                "Worked on fullstack development with Vue and Django.",
-                "Yada yada yada bla bla bla baa baa black sheep",
-            ]
+            description:
+                [
+                    "Worked on fullstack development with Vue and Django.",
+                    "Yada yada yada bla bla bla baa baa black sheep",
+                ]
         },
     ],
     [
@@ -36,11 +36,11 @@ export const experience = [
             company: "MarinaChain",
             link: "https://marinachain.io/",
             time: "May 2023 - Present",
-            description: 
-            [
-                "Worked on fullstack development with Vue and Django.",
-                "Yada yada yada bla bla bla baa baa black sheep",
-            ]
+            description:
+                [
+                    "Worked on fullstack development with Vue and Django.",
+                    "Yada yada yada bla bla bla baa baa black sheep",
+                ]
         },
         {
             image: nus,
@@ -48,11 +48,11 @@ export const experience = [
             company: "NUS CS2030S LLM Project",
             time: "June 2023 - Present",
             link: "https://marinachain.io/",
-            description: 
-            [
-                "Worked on fullstack development with Vue and Django.",
-                "Yada yada yada bla bla bla baa baa black sheep",
-            ]
+            description:
+                [
+                    "Worked on fullstack development with Vue and Django.",
+                    "Yada yada yada bla bla bla baa baa black sheep",
+                ]
         },
     ],
     [
@@ -62,11 +62,11 @@ export const experience = [
             company: "MarinaChain",
             link: "https://marinachain.io/",
             time: "May 2023 - Present",
-            description: 
-            [
-                "Worked on fullstack development with Vue and Django.",
-                "Yada yada yada bla bla bla baa baa black sheep",
-            ]
+            description:
+                [
+                    "Worked on fullstack development with Vue and Django.",
+                    "Yada yada yada bla bla bla baa baa black sheep",
+                ]
         },
         {
             image: nus,
@@ -74,17 +74,16 @@ export const experience = [
             company: "NUS CS2030S LLM Project",
             time: "June 2023 - Present",
             link: "https://marinachain.io/",
-            description: 
-            [
-                "Worked on fullstack development with Vue and Django.",
-                "Yada yada yada bla bla bla baa baa black sheep",
-            ]
+            description:
+                [
+                    "Worked on fullstack development with Vue and Django.",
+                    "Yada yada yada bla bla bla baa baa black sheep",
+                ]
         },
     ],
 ]
 
-export 
-const featuredProjects = [
+export const featuredProjects = [
     {
         display: "right",
         title: "PINUS Study",
@@ -113,4 +112,37 @@ const featuredProjects = [
         ],
         github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
     }
+]
+
+export const otherProjects = [
+    {
+        title: "Timekeeper",
+        description: "A time management app for NUS students",
+        image: pinus_study,
+        stack: [
+            "Vue",
+            "Django",
+        ],
+        github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
+    },
+    {
+        title: "Timekeeper",
+        description: "A time management app for NUS students",
+        image: pinus_study,
+        stack: [
+            "Vue",
+            "Django",
+        ],
+        github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
+    },
+    {
+        title: "Timekeeper",
+        description: "A time management app for NUS students",
+        image: pinus_study,
+        stack: [
+            "Vue",
+            "Django",
+        ],
+        github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
+    },
 ]
