@@ -61,8 +61,8 @@ import styles from "@/style"
                         <div
                             :class="`${styles.codeParagraph} text-white pl-5 border-l-2 border-grey-100 my-2 ml-2`">
                             <p>
-                                I worked with React and Vue for Frontend Development. I also developed multiple projects on
-                                them
+                                I am proficient in both React and Vue. I also expanded to React
+                                Native for mobile development, and I tried out Flutter to improve my mobile skills.
                             </p>
                         </div>
                         <span :class="`${styles.codeParagraph}  text-grey-100 text-[18px]`">&lt;/Text&gt;</span>
@@ -83,8 +83,8 @@ import styles from "@/style"
                         <span :class="`${styles.codeParagraph}  text-grey-100 text-[18px]`">"""</span>
                         <div :class="`${styles.codeParagraph} text-white my-2 `">
                             <p>
-                                I worked with React and Vue for Frontend Development. I also developed multiple projects on
-                                them
+                                I worked with Django throughout my internship, and I caught up Ruby on Rails to
+                                build up my basics of designing REST APIs. I worked with PostgreSQL for database.
                             </p>
                         </div>
                         <span :class="`${styles.codeParagraph}  text-grey-100 text-[18px]`">"""</span>
@@ -106,8 +106,8 @@ import styles from "@/style"
                         <div
                         :class="`${styles.codeParagraph} text-white pl-5 border-l-2 border-grey-100 my-2 ml-2`">
                             <p>
-                                I worked with React and Vue for Frontend Development. I also developed multiple projects on
-                                them
+                                I am comfortable working with Figma for UI/UX design, adhering to UI practices
+                                to ease frontend development. I also worked with Photoshop and CorelDraw.
                             </p>
                         </div>
                         <span :class="`${styles.codeParagraph}  text-grey-100 text-[18px]`">&lt;/span&gt;</span>
