@@ -1,8 +1,10 @@
 import marinachain from "@/assets/images/marinachain.jpg"
 import nus from "@/assets/images/nus.png"
+
 import pinus_study from "@/assets/images/projects/pinus_study.png"
 import discountlah from "@/assets/images/projects/discountlah.png"
 import classroom360 from "@/assets/images/projects/classroom360.png"
+import timekeeper from "@/assets/images/projects/timekeeper.png"
 
 export const experience = [
     [
@@ -133,13 +135,13 @@ export const otherProjects = [
     },
     {
         title: "Timekeeper",
-        description: "A time management app for NUS students",
-        image: pinus_study,
+        description: "A slides timer and presenter notes web app designed for teaching",
+        image: timekeeper,
         stack: [
             "Vue",
             "Django",
         ],
-        github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
+        github: "https://github.com/jasonchristopher21/timekeeper",
         link: "",
     },
     {
