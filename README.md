@@ -1,25 +1,18 @@
-# personal-website-v1
+# Jason Christopher's Personal Portfolio Website (V1)
 
-This template should help get you started developing with Vue 3 in Vite.
+This is the first version of Jason's Portfolio Website. The website is built using Vue on TypeScript, with TailwindCSS for the UI components. The project is currently deployed using Netlify, and you can access it through the following deployed link:
 
-## Recommended IDE Setup
+[https://jasonchristopher.space](https://jasonchristopher.space)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Project Overview
 
-## Type Support for `.vue` Imports in TS
+TBA
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Acknowledgements
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+- The color scheme is inspired by Prestidge's [Sublime Material Theme](https://marketplace.visualstudio.com/items?itemName=jprestidge.theme-material-theme) extension for VS Code (my favorite VSCode theme so far! :D)
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Typing text is obtained through SVG from [DenverCoder1](https://github.com/DenverCoder1/readme-typing-svg). Thanks!
 
 ## Project Setup
 

@@ -41,7 +41,6 @@ const workHover = ref(false)
 const projectsHover = ref(false)
 const contactHover = ref(false)
 const resumeHover = ref(false)
-const githubHover = ref(false)
 
 const buttons = [
     {
@@ -79,13 +78,13 @@ const buttons = [
         <button class="text-[20px] font-metropolis font-bold" @click="scrollToHero">Jason Christopher</button>
 
         <!-- Navbar Buttons -->
-        <div class="md:flex justify-normal gap-12 mt-1 text-[16px] font-monospace font-bold text-grey-100 hidden">
+        <div class="md:flex justify-normal gap-10 mt-1 text-[16px] font-monospace font-bold text-grey-100 hidden">
             <button v-for="item in buttons" class="transition-all hover:text-yellow" @click="item.action"
                 @mouseover="item.hover.value = true" @mouseleave="item.hover.value = false">
-                <span :class="item.hover.value ? 'transition-all text-grey-300' : 'transition-all mr-2'">
+                <span :class="item.hover.value ? 'transition-all text-grey-300' : 'transition-all mr-1'">
                     //
                 </span>
-                <span :class="item.hover.value ? 'transition-all pr-4 -ml-2' : 'transition-all'">
+                <span :class="item.hover.value ? 'transition-all pr-4 -ml-3' : 'transition-all'">
                     {{ item.name }}
                 </span>
             </button>
