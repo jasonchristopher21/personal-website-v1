@@ -1,6 +1,8 @@
 import marinachain from "@/assets/images/marinachain.jpg"
 import nus from "@/assets/images/nus.png"
 import pinus_study from "@/assets/images/projects/pinus_study.png"
+import discountlah from "@/assets/images/projects/discountlah.png"
+import classroom360 from "@/assets/images/projects/classroom360.png"
 
 export const experience = [
     [
@@ -99,12 +101,13 @@ export const featuredProjects = [
             "TypeScript"
         ],
         github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
+        link: "https://pinus-study.netlify.app",
     },
     {
         display: "left",
         title: "DiscountLah",
         subtitle: "A one-stop app for managing your coupons",
-        image: pinus_study,
+        image: discountlah,
         description: [
             "Integrated Google Maps API with current location",
             "Awarded Advanced level (Apollo) for NUS CP2106 Orbital",
@@ -112,20 +115,21 @@ export const featuredProjects = [
         stackLogos: [
             "React Native", "Firebase", "Google Maps"
         ],
-        github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
+        github: "https://github.com/jasonchristopher21/DiscountLah",
+        link: "https://drive.google.com/file/d/1X5QG69LH66FvmuajtEsuszGX2tnTiP-Z/view"
     }
 ]
 
 export const otherProjects = [
     {
-        title: "Timekeeper",
-        description: "A time management app for NUS students",
-        image: pinus_study,
+        title: "Classrooom360",
+        description: "A Transformative VR learning platform with immersive experiences",
+        image: classroom360,
         stack: [
-            "Vue",
-            "Django",
+            "React360",
         ],
-        github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
+        github: "https://github.com/melissaharijanto/pink-unicorn",
+        link: "https://classroom-360.netlify.app",
     },
     {
         title: "Timekeeper",
@@ -136,6 +140,7 @@ export const otherProjects = [
             "Django",
         ],
         github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
+        link: "",
     },
     {
         title: "Timekeeper",
@@ -146,5 +151,6 @@ export const otherProjects = [
             "Django",
         ],
         github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
+        link: "",
     },
 ]

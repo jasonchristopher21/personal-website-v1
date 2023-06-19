@@ -2,7 +2,7 @@
 import styles from "@/style"
 import { featuredProjects, otherProjects } from "@/constants"
 
-import pinus_study from "@/assets/images/projects/pinus_study.png"
+import link_icon from "@/assets/link_icon.svg"
 import github from "@/assets/images/github.png"
 
 function viewLink(link: string) {
@@ -40,9 +40,16 @@ function viewLink(link: string) {
                             <span v-for="stack in project.stackLogos"
                                 :class="`${styles.codeParagraph} text-white opacity-40 hover:opacity-100 my-auto`">{{ stack
                                 }}</span>
-                            <button class="transition-all opacity-40 hover:opacity-100" @click="viewLink(project.github)">
-                                <img :src="github" class="w-10 h-10" />
-                            </button>
+                            <div class="flex gap-2">
+                                <button class="transition-all opacity-40 hover:opacity-100"
+                                    @click="viewLink(project.github)">
+                                    <img :src="github" class="w-10 h-10" />
+                                </button>
+                                <button class="transition-all opacity-40 hover:opacity-100 my-auto"
+                                    @click="viewLink(project.link)">
+                                    <img :src="link_icon" class="w-8 h-8 invert my-auto" />
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -55,9 +62,16 @@ function viewLink(link: string) {
                                 class="font-metropolis font-medium text-[20px] text-white">{{ desc }}</span>
                         </div>
                         <div class="flex justify-start gap-8 mt-5">
-                            <button class="transition-all opacity-40 hover:opacity-100" @click="viewLink(project.github)">
-                                <img :src="github" class="w-10 h-10" />
-                            </button>
+                            <div class="flex gap-2">
+                                <button class="transition-all opacity-40 hover:opacity-100"
+                                    @click="viewLink(project.github)">
+                                    <img :src="github" class="w-10 h-10" />
+                                </button>
+                                <button class="transition-all opacity-40 hover:opacity-100 my-auto"
+                                    @click="viewLink(project.link)">
+                                    <img :src="link_icon" class="w-8 h-8 invert my-auto" />
+                                </button>
+                            </div>
                             <span v-for="stack in project.stackLogos"
                                 :class="`${styles.codeParagraph} text-white opacity-40 hover:opacity-100 my-auto`">{{ stack
                                 }}</span>
@@ -74,7 +88,7 @@ function viewLink(link: string) {
             <!-- Other Projects Card -->
             <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-flow-col gap-10 mt-10">
                 <div v-for="project in otherProjects"
-                    class="transition-all border border-white rounded-xl items-center hover:bg-grey-200">
+                    class="relative transition-all border border-white rounded-xl items-center hover:bg-grey-200">
                     <img :src="project.image"
                         class="rounded-t-xl transition-all opacity-70 brightness-50 hover:opacity-100 hover:brightness-100" />
                     <div class="px-8 py-5">
@@ -87,9 +101,16 @@ function viewLink(link: string) {
                                 <span v-for="stack in project.stack" class="transition-all opacity-40 hover:opacity-100">{{
                                     stack }}</span>
                             </div>
-                            <button class="transition-all opacity-40 hover:opacity-100" @click="viewLink(project.github)">
-                                <img :src="github" class="w-10 h-10" />
-                            </button>
+                            <div class="mb-0 mt-auto flex gap-2">
+                                <button class="transition-all opacity-40 hover:opacity-100"
+                                    @click="viewLink(project.github)">
+                                    <img :src="github" class="w-10 h-10" />
+                                </button>
+                                <button class="transition-all opacity-40 hover:opacity-100 my-auto"
+                                    @click="viewLink(project.link)">
+                                    <img :src="link_icon" class="w-8 h-8 invert my-auto" />
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
