@@ -5,6 +5,13 @@ import pinus_study from "@/assets/images/projects/pinus_study.png"
 import discountlah from "@/assets/images/projects/discountlah.png"
 import classroom360 from "@/assets/images/projects/classroom360.png"
 import timekeeper from "@/assets/images/projects/timekeeper.png"
+import moneyTap from "@/assets/images/projects/moneytap.png"
+import appChallenge from "@/assets/images/projects/appChallenge.png"
+import qnaWebsite from "@/assets/images/projects/qnaWebsite.png"
+import qna from "@/assets/images/qna.jpg"
+import nes from "@/assets/images/nes.png"
+import commit from "@/assets/images/commit.png"
+import pinus from "@/assets/images/pinus.jpg"
 
 export const experience = [
     [
@@ -17,7 +24,8 @@ export const experience = [
             description:
                 [
                     "Worked on fullstack development with Vue and Django.",
-                    "Yada yada yada bla bla bla baa baa black sheep",
+                    "Developed authentication systems and query optimisation.",
+                    "Collaborated under AGILE bi-weekly sprint cycles.",
                 ]
         },
         {
@@ -25,63 +33,88 @@ export const experience = [
             title: "Software Engineer",
             company: "NUS CS2030S LLM Project",
             time: "June 2023 - Present",
-            link: "https://marinachain.io/",
+            link: "https://www.comp.nus.edu.sg/",
             description:
                 [
-                    "Worked on fullstack development with Vue and Django.",
-                    "Yada yada yada bla bla bla baa baa black sheep",
+                    "Currently contributing to the integration of LLM for CS2030S lab grading.",
+                    "Supervised by Prof. Boyd Anderson and Dr. Adi Yoga Sidi Prabawa.",
                 ]
         },
     ],
     [
         {
-            image: marinachain,
-            title: "Software Engineer Intern",
-            company: "MarinaChain",
-            link: "https://marinachain.io/",
-            time: "May 2023 - Present",
+            image: nus,
+            title: "Teaching Assistant",
+            company: "National University of Singapore",
+            link: "https://www.comp.nus.edu.sg/",
+            time: "January - May 2023",
             description:
                 [
-                    "Worked on fullstack development with Vue and Django.",
-                    "Yada yada yada bla bla bla baa baa black sheep",
+                    "Taught CS2040S Data Structures and Algorithms. Feedback score: 5.0/5.0",
+                    "Taught CS2030S Programming Methodology II. Feedback score: 4.8/5.0",
                 ]
         },
         {
             image: nus,
-            title: "Software Engineer",
-            company: "NUS CS2030S LLM Project",
-            time: "June 2023 - Present",
-            link: "https://marinachain.io/",
+            title: "Teaching Assistant",
+            company: "National University of Singapore",
+            time: "August - December 2022",
+            link: "https://www.comp.nus.edu.sg/",
             description:
                 [
-                    "Worked on fullstack development with Vue and Django.",
-                    "Yada yada yada bla bla bla baa baa black sheep",
+                    "Taught CS1101S Programming Methodology. Feedback score: 4.9/5.0",
+                    "Taught CS2030S Programming Methodology II. Feedback score: 4.3/5.0",
                 ]
         },
+        {
+            image: qna,
+            title: "Content Creator",
+            company: "Math Q&A",
+            time: "August 2020 - May 2023",
+            link: "https://instagram.com/math.qna",
+            description:
+                [
+                    "Created mathematics education content for 210,000+ followers on Instagram.",
+                    "Collaborated with 11 other creators to produce content for this non-profit organisation.",
+                ]
+        }
     ],
     [
         {
-            image: marinachain,
-            title: "Software Engineer Intern",
-            company: "MarinaChain",
-            link: "https://marinachain.io/",
-            time: "May 2023 - Present",
+            image: pinus,
+            title: "Frontend Developer",
+            company: "Perhimpunan Indonesia NUS (PINUS)",
+            link: "https://pinusonline.org/",
+            time: "August 2022 - May 2023",
             description:
                 [
-                    "Worked on fullstack development with Vue and Django.",
-                    "Yada yada yada bla bla bla baa baa black sheep",
+                    "Collaborated with 8 developers to build a study forum for NUS Indonesian students.",
+                    "Implemented a customisable Rich-text editor with React and Slate JS.",
+                    "Learned hands-on REST API and their implementation with React.",
                 ]
         },
         {
-            image: nus,
-            title: "Software Engineer",
-            company: "NUS CS2030S LLM Project",
-            time: "June 2023 - Present",
-            link: "https://marinachain.io/",
+            image: nes,
+            title: "Web Developer",
+            company: "NUS Entrepreneurship Society",
+            time: "August 2022 - May 2023",
+            link: "https://www.nusentresoc.com/",
             description:
                 [
-                    "Worked on fullstack development with Vue and Django.",
-                    "Yada yada yada bla bla bla baa baa black sheep",
+                    "Collaborated with 3 developers to build a website for Ground Zero 2023.",
+                    "Implemented React and Tailwind with Responsive Mobile Design.",
+                ]
+        },
+        {
+            image: commit,
+            title: "Training Member",
+            company: "NUSSU CommIT",
+            time: "August 2022 - May 2023",
+            link: "https://www.nussucommit.com",
+            description:
+                [
+                    "Provided weekly training on Python Programming, Web Developmnt and MS Excel.",
+                    "Engaged with a 30+ students audience each session from various faculties.",
                 ]
         },
     ],
@@ -154,5 +187,26 @@ export const otherProjects = [
         ],
         github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
         link: "",
+    },
+]
+
+export const designs = [
+    {
+        title: "MoneyTap",
+        description: "An expense-tracking app inspired by amortisation accounting method",
+        image: moneyTap,
+        link: "https://classroom-360.netlify.app",
+    },
+    {
+        title: "SIA App Challenge",
+        description: "Work in progress for the Singapore Airlines App Challenge 2023",
+        image: appChallenge,
+        link: "https://classroom-360.netlify.app",
+    },
+    {
+        title: "Q&A Website",
+        description: "A corporate website for Q&A Group, non-profit edtech organisation",
+        image: qnaWebsite,
+        link: "https://classroom-360.netlify.app",
     },
 ]

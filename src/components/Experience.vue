@@ -2,8 +2,13 @@
 import styles from "@/style"
 import { experience } from "@/constants"
 import { ref } from 'vue'
+import arrow_icon from "@/assets/arrow_icon.svg"
 
 const pageNumber = ref(0)
+
+function viewLink(link: string) {
+    window.open(link, "_blank")
+}
 </script>
 
 <template>
@@ -39,19 +44,25 @@ const pageNumber = ref(0)
             <div class="flex gap-10">
                 <div class="items-center">
                     <div class="ring-4 ring-white ring-offset-4 ring-offset-grey-300 rounded-full z-20">
-                    <img :src="page.image" class="w-20 h-20 mt-1 rounded-full z-20">
-                </div>
+                        <img :src="page.image" class="w-20 h-20 mt-1 rounded-full z-20">
+                    </div>
                     <div class="w-1 mx-auto h-full -mt-10 bg-white z-0"></div>
                 </div>
                 <div class="flex flex-col gap-6">
                     <div class="flex flex-col">
                         <span class="text-[36px] font-gilroy font-extrabold text-white">{{ page.title }}</span>
                         <span class="text-[22px] font-metropolis font-bold text-white">
-                            {{ page.company }}, {{ page.time }}
+                            <button @click="viewLink(page.link)" class="transition-all hover:text-yellow hover:underline">
+                                {{ page.company }}
+                            </button>
+                            , {{ page.time }}
                         </span>
                     </div>
                     <div class="flex flex-col gap-1 text-[20px] font-metropolis font-medium text-white">
-                        <span v-for="text in page.description">{{ text }}</span>
+                        <div v-for="text in page.description" class="flex gap-4">
+                            <img :src="arrow_icon" class="w-3.5 my-auto" />
+                            <span class="my-auto">{{ text }}</span>
+                        </div>
                     </div>
                 </div>
             </div>

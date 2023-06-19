@@ -41,7 +41,6 @@ const workHover = ref(false)
 const projectsHover = ref(false)
 const contactHover = ref(false)
 const resumeHover = ref(false)
-const githubHover = ref(false)
 
 const buttons = [
     {
