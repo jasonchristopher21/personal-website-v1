@@ -128,7 +128,7 @@ function viewLink(link: string) {
 
         <!-- Other Projects -->
         <div class="mt-20 2xl:px-20">
-            <span :class="styles.heading1">Designs I Made (Code Work in Progress)</span>
+            <span :class="styles.heading1">My Designs (Soon to be Code 😆)</span>
 
             <!-- Other Projects Card -->
             <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-flow-col gap-10 mt-10">

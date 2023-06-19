@@ -12,6 +12,7 @@ import qna from "@/assets/images/qna.jpg"
 import nes from "@/assets/images/nes.png"
 import commit from "@/assets/images/commit.png"
 import pinus from "@/assets/images/pinus.jpg"
+import groundzero from "@/assets/images/projects/groundzero.png"
 
 export const experience = [
     [
@@ -167,26 +168,26 @@ export const otherProjects = [
         link: "https://classroom-360.netlify.app",
     },
     {
-        title: "Timekeeper",
-        description: "A slides timer and presenter notes web app designed for teaching",
+        title: "TimeKeeper",
+        description: "A slides timer and presenter notes app for teaching (in progress)",
         image: timekeeper,
         stack: [
             "Vue",
             "Django",
         ],
         github: "https://github.com/jasonchristopher21/timekeeper",
-        link: "",
+        link: "https://github.com/jasonchristopher21/timekeeper",
     },
     {
-        title: "Timekeeper",
-        description: "A time management app for NUS students",
-        image: pinus_study,
+        title: "Ground Zero",
+        description: "Information and Promotional website for NUS Ground Zero 2023",
+        image: groundzero,
         stack: [
-            "Vue",
-            "Django",
+            "React",
+            "Tailwind",
         ],
-        github: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
-        link: "",
+        github: "https://github.com/NESGroundZero/groundzero-website/",
+        link: "https://www.nesgroundzero.com/",
     },
 ]
 
@@ -195,18 +196,18 @@ export const designs = [
         title: "MoneyTap",
         description: "An expense-tracking app inspired by amortisation accounting method",
         image: moneyTap,
-        link: "https://classroom-360.netlify.app",
+        link: "https://www.figma.com/file/0rqSXO9m4KdY8hUMUKIfom/MoneyTap?type=design&node-id=35%3A13&t=KWTLYazZ2bg6LWhb-1",
     },
     {
         title: "SIA App Challenge",
         description: "Work in progress for the Singapore Airlines App Challenge 2023",
         image: appChallenge,
-        link: "https://classroom-360.netlify.app",
+        link: "https://www.figma.com/file/zjzCcRfsbedw6WDqhzebTJ/SIA-App-Challenge?type=design&node-id=19%3A28&t=KWTLYazZ2bg6LWhb-1",
     },
     {
         title: "Q&A Website",
-        description: "A corporate website for Q&A Group, non-profit edtech organisation",
+        description: "A corporate website for Q&A Group, non-profit EdTech organisation",
         image: qnaWebsite,
-        link: "https://classroom-360.netlify.app",
+        link: "https://www.figma.com/file/zzXNtxfzY7ysbG6K0OlZHO/Website-Q%26A?type=design&node-id=0%3A1&t=KWTLYazZ2bg6LWhb-1",
     },
 ]
