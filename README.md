@@ -4,6 +4,8 @@ This is the first version of Jason's Portfolio Website. The website is built usi
 
 [https://jasonchristopher.space](https://jasonchristopher.space)
 
+This page is designed by myself, and if you are interested to see the design, you can access it through the following [Figma Link](https://www.figma.com/file/1OKyM4fcfd0Gn9BSr5KC5u/Personal-Website?type=design&node-id=0%3A1&t=peSc3lQUShlxhYGS-1)
+
 ## Project Overview
 
 TBA
