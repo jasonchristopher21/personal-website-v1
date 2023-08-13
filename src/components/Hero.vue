@@ -2,7 +2,7 @@
 
 <template>
     <div class="flex flex-col h-[95vh]" id="hero">
-        <span class="text-[20px] md:text-[34px] font-monospace text-blue-200 font-bold mt-52">Hello World! My name is</span>
+        <span class="text-[20px] md:text-[34px] font-monospace text-blue-200 font-bold mt-40 md:mt-52">Hello World! My name is</span>
         <span class="text-[50px] md:text-[85px] font-gilroy text-white font-bold mt-10 md:mt-2">Jason Christopher</span>
 
         <!-- Typing text -->
