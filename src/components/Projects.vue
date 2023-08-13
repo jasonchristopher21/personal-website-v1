@@ -17,11 +17,11 @@ function viewLink(link: string) {
         <!-- Projects Heading -->
         <div class="flex gap-5 mt-32">
             <span :class='`${styles.headingNumber} text-green my-auto`'>03.</span>
-            <span class="font-gilroy font-extrabold text-[40px] text-white">Featured Projects</span>
+            <span :class="styles.heading1">Featured Projects</span>
         </div>
 
         <!-- Projects Card -->
-        <div class="flex flex-col relative mt-20 px-10 2xl:px-[5vw]" v-for="project in featuredProjects">
+        <div class="flex flex-col relative mt-20 px-10 2xl:px-[5vw] md:block hidden" v-for="project in featuredProjects">
             <div class="relative flex">
                 <img v-if="project.display === 'right'" :src="project.image"
                     class="transition-all w-[40rem] z-0 opacity-70 brightness-50 hover:opacity-100 hover:brightness-100 drop-shadow-[4px_4px_20px_rgba(0,0,0,0.5)] 2xl:w-[50rem]" />
@@ -76,6 +76,40 @@ function viewLink(link: string) {
                             <span v-for="stack in project.stackLogos"
                                 :class="`${styles.codeParagraph} text-white opacity-40 hover:opacity-100 my-auto`">{{ stack
                                 }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Card Mobile -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-flow-col gap-10 mt-10">
+            <div v-for="project in featuredProjects"
+                class="relative transition-all border border-white rounded-xl items-center hover:bg-grey-200">
+                <img :src="project.image"
+                    class="rounded-t-xl transition-all opacity-70 brightness-50 hover:opacity-100 hover:brightness-100" />
+                <div class="px-8 py-5">
+                    <div class="flex flex-col gap-1">
+                        <span :class="styles.heading3">{{ project.title }}</span>
+                        <ul :class="styles.paragraph" v-for="line in project.description">
+                            <li>{{ line }}</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-between mt-5">
+                        <div :class="`${styles.codeParagraph} flex gap-4 text-white my-auto`">
+                            <span v-for="stack in project.stackLogos.splice(0, 1)"
+                                :class="`${styles.codeParagraph} text-white opacity-40 hover:opacity-100 my-auto`">{{ stack
+                                }}</span>
+                        </div>
+                        <div class="mb-0 mt-auto flex gap-2">
+                            <button class="transition-all opacity-40 hover:opacity-100 my-auto"
+                                @click="viewLink(project.github)">
+                                <img :src="github" class="w-10 h-10 my-auto" />
+                            </button>
+                            <button class="transition-all opacity-40 hover:opacity-100 my-auto"
+                                @click="viewLink(project.link)">
+                                <img :src="link_icon" class="w-8 h-8 invert my-auto" />
+                            </button>
                         </div>
                     </div>
                 </div>

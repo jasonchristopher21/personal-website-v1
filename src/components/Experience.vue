@@ -12,7 +12,7 @@ function viewLink(link: string) {
 </script>
 
 <template>
-    <div class="flex flex-col" id="work">
+    <div class="flex flex-col md:block hidden" id="work">
 
         <!-- Heading -->
         <div class="flex gap-5 mt-32">
@@ -69,5 +69,59 @@ function viewLink(link: string) {
         </div>
 
         <div class="w-full bg-grey-300 py-5 -mt-5 border-b-4 border-grey-100"></div>
+    </div>
+
+    <!-- Mobile version -->
+    <div class="flex flex-col md:hidden" id="work">
+
+        <!-- Heading -->
+        <div class="flex gap-5 mt-32">
+            <span :class='`${styles.headingNumber} text-purple my-auto`'>02.</span>
+            <span :class="styles.heading1">Work Experience</span>
+        </div>
+
+        <!-- Tabs -->
+        <div class="flex mt-10 gap-20 py-5 px-10 font-monospace text-white text-[20px] hidden">
+            <button class="relative flex flex-col" @click="pageNumber = 0">
+                <span class="text-white z-10 w-auto font-semibold">developer</span>
+                <div class="absolute p-1 w-[110%] -ml-[5%] bg-blue-300 top-5 z-0"> </div>
+            </button>
+            <button class="relative flex flex-col" @click="pageNumber = 1">
+                <span class="text-white z-10 w-auto font-semibold">teaching</span>
+                <div class="absolute p-1 w-[110%] -ml-[5%] bg-orange top-5 z-0"> </div>
+            </button>
+            <button class="relative flex flex-col" @click="pageNumber = 2">
+                <span class="text-white z-10 w-auto font-semibold">organisations</span>
+                <div class="absolute p-1 w-[110%] -ml-[5%] bg-pink top-5 z-0"> </div>
+            </button>
+        </div>
+
+        <!-- Grey Border -->
+        <div class="w-full border-b-4 mt-3 mb-5 border-grey-100 hidden"></div>
+
+        <!-- Content -->
+        <div v-for="page in experience[pageNumber]" class="py-5 mt-10">
+            <div class="flex gap-10">
+                <div class="flex flex-col gap-6">
+                    <div class="flex flex-col">
+                        <span :class="styles.heading2">{{ page.title }}</span>
+                        <span :class="styles.heading3">
+                            <button @click="viewLink(page.link)" class="transition-all hover:text-yellow hover:underline">
+                                {{ page.company }}
+                            </button>
+                            , {{ page.time }}
+                        </span>
+                    </div>
+                    <div :class="`${styles.paragraph} flex flex-col gap-1`">
+                        <div v-for="text in page.description" class="flex gap-4">
+                            <img :src="arrow_icon" class="w-3.5 my-auto" />
+                            <span class="my-auto">{{ text }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full bg-grey-300 py-5 -mt-5 border-b-4 border-grey-100 hidden"></div>
     </div>
 </template>

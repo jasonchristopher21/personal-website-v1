@@ -13,9 +13,9 @@ const message = ref("")
     <div class="flex flex-col" id="contact">
         <div class="flex gap-5 mt-32">
             <span :class='`${styles.headingNumber} text-orange my-auto`'>04.</span>
-            <span class="font-gilroy font-extrabold text-[48px] text-white">Contact me</span>
+            <span :class="styles.heading1">Contact me</span>
         </div>
-        <div class="md:flex mt-10 lg:gap-20 md:gap-10">
+        <div class="flex md:flex-row flex-col gap-10 mt-10 lg:gap-20 md:gap-10">
             <div class=" flex flex-col gap-5 text-justify md:w-full">
                 <p :class="styles.paragraph">
                     I would love to hear from you! Whether you have a project in mind or simply want to say hello, feel free to reach out. 
