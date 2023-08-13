@@ -10,7 +10,7 @@ import Footer from './components/Footer.vue'
 
 <template>
   <Navbar />
-  <div class="bg-grey-300 px-32">
+  <div class="bg-grey-300 md:px-32 px-10">
     <Hero />
     <About />
     <Experience />

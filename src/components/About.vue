@@ -20,20 +20,15 @@ import styles from "@/style"
             <p>
                 During my internship, I have worked around <span class="font-bold text-green">Fullstack Development</span>,
                 handling both frontend and backend endpoint management.
-                Most of my work revolve around <span class="font-bold text-yellow">Frontend Development</span> and <span
-                    class="font-bold text-yellow">UI/UX Design</span>, which I polish consistently through projects and
-                participating in hackathons.
-            </p>
-            <p>
-                I am also interested in <span class="font-bold text-blue-100">Machine Learning</span>, <span
-                    class="font-bold text-blue-100">Natural Language Processing</span> and <span
-                    class="font-bold text-blue-100">Computer Security</span>. I have taken modules in these areas and have
-                worked on projects that involve them, such as building a search engine by prioritising query relevance.
+                I am also interested in <span class="font-bold text-yellow">Machine Learning</span> and <span
+                    class="font-bold text-blue-100">Natural Language Processing</span>,
+                worked on projects that involve them, such as building a search engine by prioritising query relevance and
+                an open-source plagiarism detection software.
             </p>
         </div>
 
         <!-- Developer Profile -->
-        <div class="mt-20">
+        <div class="mt-20 hidden"> <!--Hide developer profile for future use-->
 
             <!-- Profile Heading -->
             <div class="flex flex-col gap-3 mt-2">
@@ -51,15 +46,18 @@ import styles from "@/style"
                     <div class="relative flex gap-[10%]">
                         <img src="@/assets/images/react.svg" class="xl:w-auto lg:w-[4.5vw] sm:w-auto">
                         <div class="relative flex flex-col">
-                            <span class="font-gilroy font-extrabold text-white lg:text-[2.5vw] xl:text-[40px] sm:text-[40px] z-10 w-auto">Frontend</span>
-                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-blue-300 lg:top-[2.2vw] xl:top-9  sm:top-9 z-0"> </div>
-                            <span class="font-gilroy font-extrabold text-white lg:text-[1.5vw] xl:text-[24px] -mt-0.5 sm:text-[24px]">React, Vue</span>
+                            <span
+                                class="font-gilroy font-extrabold text-white lg:text-[2.5vw] xl:text-[40px] sm:text-[40px] z-10 w-auto">Frontend</span>
+                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-blue-300 lg:top-[2.2vw] xl:top-9  sm:top-9 z-0">
+                            </div>
+                            <span
+                                class="font-gilroy font-extrabold text-white lg:text-[1.5vw] xl:text-[24px] -mt-0.5 sm:text-[24px]">React,
+                                Vue</span>
                         </div>
                     </div>
                     <div class="mt-5">
                         <span :class="`${styles.codeParagraph}  text-grey-100 text-[18px]`">&lt;Text&gt;</span>
-                        <div
-                            :class="`${styles.codeParagraph} text-white pl-5 border-l-2 border-grey-100 my-2 ml-2`">
+                        <div :class="`${styles.codeParagraph} text-white pl-5 border-l-2 border-grey-100 my-2 ml-2`">
                             <p>
                                 I am proficient in both React and Vue. I also expanded to React
                                 Native for mobile development, and I tried out Flutter to improve my mobile skills.
@@ -74,9 +72,13 @@ import styles from "@/style"
                     <div class="relative flex gap-[13%]">
                         <img src="@/assets/images/django.svg" class="xl:w-auto lg:w-[4.5vw] sm:w-auto">
                         <div class="relative flex flex-col">
-                            <span class="font-gilroy font-extrabold text-white lg:text-[2.5vw] xl:text-[40px] z-10 w-auto sm:text-[40px]">Backend</span>
-                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-orange lg:top-[2.2vw] xl:top-9 sm:top-9 z-0"> </div>
-                            <span class="font-gilroy font-extrabold text-white lg:text-[1.5vw] xl:text-[24px] -mt-0.5 sm:text-[24px]">Django, Rails</span>
+                            <span
+                                class="font-gilroy font-extrabold text-white lg:text-[2.5vw] xl:text-[40px] z-10 w-auto sm:text-[40px]">Backend</span>
+                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-orange lg:top-[2.2vw] xl:top-9 sm:top-9 z-0">
+                            </div>
+                            <span
+                                class="font-gilroy font-extrabold text-white lg:text-[1.5vw] xl:text-[24px] -mt-0.5 sm:text-[24px]">Django,
+                                Rails</span>
                         </div>
                     </div>
                     <div class="mt-5">
@@ -96,23 +98,25 @@ import styles from "@/style"
                     <div class="relative flex gap-[8%]">
                         <img src="@/assets/images/figma.svg" class="xl:w-auto lg:w-[5.5vw] sm:w-auto -mt-1">
                         <div class="relative flex flex-col">
-                            <span class="font-gilroy font-extrabold text-white lg:text-[2.5vw] xl:text-[40px] z-10 w-auto sm:text-[40px]">UI/UX</span>
-                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-pink lg:top-[2.2vw] xl:top-9  sm:top-9 z-0"> </div>
-                            <span class="font-gilroy font-extrabold text-white lg:text-[1.5vw] xl:text-[24px] -mt-0.5 sm:text-[24px]">Figma</span>
+                            <span
+                                class="font-gilroy font-extrabold text-white lg:text-[2.5vw] xl:text-[40px] z-10 w-auto sm:text-[40px]">UI/UX</span>
+                            <div class="absolute p-2 w-[110%] -ml-[5%] bg-pink lg:top-[2.2vw] xl:top-9  sm:top-9 z-0">
+                            </div>
+                            <span
+                                class="font-gilroy font-extrabold text-white lg:text-[1.5vw] xl:text-[24px] -mt-0.5 sm:text-[24px]">Figma</span>
                         </div>
                     </div>
                     <div class="mt-5">
                         <span :class="`${styles.codeParagraph}  text-grey-100 text-[18px]`">&lt;span&gt;</span>
-                        <div
-                        :class="`${styles.codeParagraph} text-white pl-5 border-l-2 border-grey-100 my-2 ml-2`">
+                        <div :class="`${styles.codeParagraph} text-white pl-5 border-l-2 border-grey-100 my-2 ml-2`">
                             <p>
                                 I am comfortable working with Figma for UI/UX design, adhering to UI practices
-                                to ease frontend development. I also worked with Photoshop and CorelDraw.
-                            </p>
-                        </div>
-                        <span :class="`${styles.codeParagraph}  text-grey-100 text-[18px]`">&lt;/span&gt;</span>
+                            to ease frontend development. I also worked with Photoshop and CorelDraw.
+                        </p>
                     </div>
+                    <span :class="`${styles.codeParagraph}  text-grey-100 text-[18px]`">&lt;/span&gt;</span>
                 </div>
+            </div>
         </div>
     </div>
 </div></template>

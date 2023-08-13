@@ -18,7 +18,7 @@ function viewProjectWebsite() {
 </script> 
 
 <template>
-    <div class="flex justify-between md:px-20 2xl:px-32 pt-8 pb-12 bg-grey-200 text-white">
+    <div class="flex flex-col md:flex-row justify-between md:px-20 2xl:px-32 gap-2 md:gap-0 px-10 pt-8 pb-12 bg-grey-200 text-white">
 
         <!-- Website logo -->
         <div class="my-auto">
@@ -31,10 +31,10 @@ function viewProjectWebsite() {
         </div>
 
         <!-- Made with love -->
-        <div class="flex flex-col gap-1.5 opacity-80 text-right">
+        <div class="flex flex-col gap-1.5 opacity-80 text-left md:text-right">
             <span :class="styles.codeParagraph">Made with ❤️ by Jason Christopher, (c) 2023</span>
             <div>
-                <button class="transition-all flex gap-2 mr-0 ml-auto border-b-0 border-white hover:border-b hover:scale-[102%]" @click="viewProjectWebsite">
+                <button class="transition-all flex gap-2 md:mr-0 md:ml-auto border-b-0 border-white hover:border-b hover:scale-[102%]" @click="viewProjectWebsite">
                     <span :class="`${styles.codeParagraph}`">View this website on GitHub!</span>
                     <img :src="link_icon" class="w-5 h-5 my-auto invert">
                 </button>
