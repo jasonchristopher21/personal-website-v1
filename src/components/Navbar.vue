@@ -72,7 +72,7 @@ const buttons = [
 </script>
 
 <template>
-    <div class="flex justify-between pl-14 md:px-14 2xl:px-20 pt-8 pb-12 bg-grey-300 text-white z-50 fixed w-full md:block hidden">
+    <div class="justify-between pl-14 md:px-14 2xl:px-20 pt-8 pb-12 bg-grey-300 text-white z-50 fixed w-full md:flex hidden">
 
         <!-- Name on the left of navbar -->
         <button class="text-[20px] font-metropolis font-bold" @click="scrollToHero">Jason Christopher</button>
