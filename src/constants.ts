@@ -122,6 +122,25 @@ export const experience = [
 ]
 
 export const featuredProjects = [
+    
+    {
+        display: "left",
+        title: "MarinaNet (Internship Project)",
+        subtitle: "A reporting system platform for regulating maritime carbon emission",
+        image: "https://uploads-ssl.webflow.com/62cfbb34654fb1f9f5971e8f/634d294c9eecddc6a71049fa_marinanet-display-min.png",
+        description: [
+            "Built authentication systems, role-based access, query optimisation and test cases with Vue and Django.",
+            "Implemented autofill and email integration with OpenAI.",
+        ],
+        stackLogos: [
+            "Vue",
+            "Django",
+            "PostgreSQL",
+            "ChatGPT"
+        ],
+        github: "https://www.marinachain.io/marinanet",
+        link: "https://www.marinachain.io/marinanet",
+    },
     {
         display: "right",
         title: "PINUS Study",
