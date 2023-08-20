@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TypeEffect from "./TypeEffect.vue"
+</script>
 
 <template>
     <div class="flex flex-col h-[95vh]" id="hero">
@@ -6,10 +8,11 @@
         <span class="text-[50px] md:text-[85px] font-gilroy text-white font-bold mt-10 md:mt-2">Jason Christopher</span>
 
         <!-- Typing text -->
-        <div class="flex flex-col md:flex-row mt-8 md:gap-6">
+        <!-- <div class="flex flex-row md:flex-row mt-8 gap-1 md:gap-6">
             <span class="text-[20px] md:text-[34px] font-metropolis text-white font-semibold">I'm a</span>
-            <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=30&duration=4000&pause=1000&color=FFCB64&width=550&lines=Fullstack+Developer+;UI%2FUX+Designer;Computer+Science+Student;Teaching+Enthusiast;Web+and+Mobile+App+Developer;Aviation+Enthusiast+%E2%9C%88%EF%B8%8F" class="scale-150 md:scale-110 mt-2.5 ml-14 md:ml-5" alt="Typing SVG" />
-        </div>
+            <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=30&duration=4000&pause=1000&color=FFCB64&width=550&lines=Fullstack+Developer+;Computer+Science+Student;Teaching+Enthusiast;Web+and+Mobile+App+Developer;Aviation+Enthusiast+%E2%9C%88%EF%B8%8F" class="mt-2.5 ml-14 md:ml-5" alt="Typing SVG" />
+        </div> -->
+        <TypeEffect />
     </div>
 </template>
 
