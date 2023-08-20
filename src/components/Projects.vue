@@ -83,7 +83,7 @@ function viewLink(link: string) {
         </div>
 
         <!-- Projects Card Mobile -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-flow-col gap-10 mt-10">
+        <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-flow-col gap-10 mt-10 md:hidden">
             <div v-for="project in featuredProjects"
                 class="relative transition-all border border-white rounded-xl items-center hover:bg-grey-200">
                 <img :src="project.image"
