@@ -9,19 +9,20 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <Navbar />
-  <div class="bg-grey-300 md:px-32 px-10">
-    <Hero />
-    <About />
-    <Experience />
-    <Projects />
-    <Contact />
-  </div>
-  <Footer />
+    <div class="bg-grey-300">
+        <Navbar />
+        <div class="bg-grey-300 md:px-32 px-10 max-w-[1440px] mx-auto">
+            <Hero />
+            <About />
+            <Experience />
+            <Projects />
+            <Contact />
+        </div>
+        <Footer />
+    </div>
 </template>
 
 <style lang="scss">
-
 @font-face {
     font-family: "Gilroy";
     font-display: swap;
@@ -90,7 +91,7 @@ import Footer from './components/Footer.vue'
     font-weight: 600;
     font-display: swap;
     font-style: normal;
-    src:url("@/fonts/RobotoMono-SemiBold.ttf") format("truetype");
+    src: url("@/fonts/RobotoMono-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
@@ -100,5 +101,4 @@ import Footer from './components/Footer.vue'
     font-style: normal;
     src: url("@/fonts/RobotoMono-Bold.ttf") format("truetype");
 }
-
 </style>

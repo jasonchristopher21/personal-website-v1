@@ -21,7 +21,7 @@ function viewLink(link: string) {
         </div>
 
         <!-- Projects Card -->
-        <div class="flex flex-col relative mt-20 px-10 2xl:px-[5vw] md:block hidden" v-for="project in featuredProjects">
+        <div class="flex flex-col relative mt-20 md:block hidden" v-for="project in featuredProjects">
             <div class="relative flex">
                 <img v-if="project.display === 'right'" :src="project.image"
                     class="transition-all w-[40rem] z-0 opacity-70 brightness-50 hover:opacity-100 hover:brightness-100 drop-shadow-[4px_4px_20px_rgba(0,0,0,0.5)] 2xl:w-[50rem]" />
@@ -83,7 +83,7 @@ function viewLink(link: string) {
         </div>
 
         <!-- Projects Card Mobile -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-flow-col gap-10 mt-10">
+        <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-flow-col gap-10 mt-10 md:hidden">
             <div v-for="project in featuredProjects"
                 class="relative transition-all border border-white rounded-xl items-center hover:bg-grey-200">
                 <img :src="project.image"
@@ -118,7 +118,7 @@ function viewLink(link: string) {
 
         <!-- Other Projects -->
         <div class="mt-20 2xl:px-20">
-            <span :class="styles.heading1">(Also) My Other Interesting Projects</span>
+            <!-- <span :class="styles.heading1">(Also) My Other Interesting Projects</span> -->
 
             <!-- Other Projects Card -->
             <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-flow-col gap-10 mt-10">
