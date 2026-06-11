@@ -15,6 +15,7 @@ import commit from "@/assets/images/commit.png"
 import pinus from "@/assets/images/pinus.jpg"
 import singtel from "@/assets/images/singtel.jpg"
 import groundzero from "@/assets/images/projects/groundzero.png"
+import artisan from "@/assets/images/artisan.png"
 
 export const experience = [
     [
@@ -156,7 +157,7 @@ export const featuredProjects = [
         display: "left",
         title: "Artisan",
         subtitle: "AI-Powered Website Generator",
-        image: "https://uploads-ssl.webflow.com/62cfbb34654fb1f9f5971e8f/634d294c9eecddc6a71049fa_marinanet-display-min.png",
+        image: artisan,
         description: [
             "Built a prompt-engineered automation system with OpenAI API to generate production-ready websites.",
             // "Integrated PostgreSQL backend with Prisma ORM for persistent configuration management.",
