@@ -9,36 +9,53 @@ import moneyTap from "@/assets/images/projects/moneytap.png"
 import appChallenge from "@/assets/images/projects/appChallenge.png"
 import qnaWebsite from "@/assets/images/projects/qnaWebsite.png"
 import qna from "@/assets/images/qna.jpg"
+import gdsc from "@/assets/images/gdsc.jpg"
 import nes from "@/assets/images/nes.png"
 import commit from "@/assets/images/commit.png"
 import pinus from "@/assets/images/pinus.jpg"
+import singtel from "@/assets/images/singtel.jpg"
 import groundzero from "@/assets/images/projects/groundzero.png"
+import artisan from "@/assets/images/artisan.png"
 
 export const experience = [
     [
+        {
+            image: singtel,
+            title: "Cloud Operations Engineer",
+            company: "Singtel",
+            link: "https://singtel.com/",
+            time: "Jul 2025 - Present",
+            description:
+                [
+                    "Developed Python automation for monitoring of Kubernetes, Ceph, Data Fabric, and Control Fabric in Ericsson CNIS platform",
+                    "Led deployment of Ansible Execution Node in Ericsson CNIS Platform.",
+                    "Supported production 4G/5G core infrastructure through incident troubleshooting, alarm analysis, and platform maintenance.",
+                ]
+        },
+        {
+            image: singtel,
+            title: "Cloud DevOps Intern",
+            company: "Singtel",
+            link: "https://singtel.com/",
+            time: "May 2024 - Aug 2024",
+            description:
+                [
+                    "Developed a modular healthcheck system with Ansible and Python for Ericsson 4G Core production switches and servers",
+                    "Built a virtual machine (VM) provisioning and lifecycle management pipeline using Terraform, Jenkins, and Ansible.",
+                    "Collaborated in a team to create an award-winning phishing campaign analysis dashboard",
+                ]
+        },
         {
             image: marinachain,
             title: "Software Engineer Intern",
             company: "MarinaChain",
             link: "https://marinachain.io/",
-            time: "May 2023 - Present",
+            time: "May 2023 - Aug 2023",
             description:
                 [
                     "Worked on fullstack development with Vue and Django.",
                     "Developed authentication systems and query optimisation.",
                     "Collaborated under AGILE bi-weekly sprint cycles.",
-                ]
-        },
-        {
-            image: nus,
-            title: "Software Engineer",
-            company: "NUS CS2030S LLM Project",
-            time: "June 2023 - Present",
-            link: "https://www.comp.nus.edu.sg/",
-            description:
-                [
-                    "Currently contributing to the integration of LLM for CS2030S lab grading.",
-                    "Supervised by Prof. Boyd Anderson and Dr. Adi Yoga Sidi Prabawa.",
                 ]
         },
     ],
@@ -82,6 +99,19 @@ export const experience = [
     ],
     [
         {
+            image: gdsc,
+            title: "Frontend Developer Lead",
+            company: "Google Developer Student Clubs NUS (GDSC NUS)",
+            link: "https://gdsc-nus.vercel.app/",
+            time: "August 2023 - May 2024",
+            description:
+                [
+                    "Led frontend development of a Next.js CRM platform for Resilience Collective.",
+                    "Mentored a 4-member engineering team through code reviews and best practices.",
+                    "Collaborated on product roadmap, system architecture, and technology decisions.",
+                ]
+        },
+        {
             image: pinus,
             title: "Frontend Developer",
             company: "Perhimpunan Indonesia NUS (PINUS)",
@@ -122,24 +152,26 @@ export const experience = [
 ]
 
 export const featuredProjects = [
-    
+
     {
         display: "left",
-        title: "MarinaNet (Internship Project)",
-        subtitle: "A reporting system platform for regulating maritime carbon emission",
-        image: "https://uploads-ssl.webflow.com/62cfbb34654fb1f9f5971e8f/634d294c9eecddc6a71049fa_marinanet-display-min.png",
+        title: "Artisan",
+        subtitle: "AI-Powered Website Generator",
+        image: artisan,
         description: [
-            "Built authentication systems, role-based access, query optimisation and test cases with Vue and Django.",
-            "Implemented autofill and email integration with OpenAI.",
+            "Built a prompt-engineered automation system with OpenAI API to generate production-ready websites.",
+            // "Integrated PostgreSQL backend with Prisma ORM for persistent configuration management.",
+            "Awarded Best Project at NUS CS3216 (STePS Showcase)."
         ],
         stackLogos: [
-            "Vue",
-            "Django",
+            "Next.js",
+            "tRPC",
+            "Prisma",
             "PostgreSQL",
-            "ChatGPT"
+            "OpenAI"
         ],
-        github: "https://www.marinachain.io/marinanet",
-        link: "https://www.marinachain.io/marinanet",
+        github: "https://artisan.jasonchristopher.dev",
+        link: "https://artisan.jasonchristopher.dev",
     },
     {
         display: "right",
@@ -160,19 +192,38 @@ export const featuredProjects = [
     },
     {
         display: "left",
-        title: "DiscountLah",
-        subtitle: "A one-stop app for managing your coupons",
-        image: discountlah,
+        title: "MarinaNet (Internship Project)",
+        subtitle: "A reporting system platform for regulating maritime carbon emission",
+        image: "https://uploads-ssl.webflow.com/62cfbb34654fb1f9f5971e8f/634d294c9eecddc6a71049fa_marinanet-display-min.png",
         description: [
-            "Integrated Google Maps API with current location",
-            "Awarded Advanced level (Apollo) for NUS CP2106 Orbital",
+            "Built authentication systems, role-based access, query optimisation and test cases with Vue and Django.",
+            "Implemented autofill and email integration with OpenAI.",
         ],
         stackLogos: [
-            "React Native", "Firebase", "Google Maps"
+            "Vue",
+            "Django",
+            "PostgreSQL",
+            "ChatGPT"
         ],
-        github: "https://github.com/jasonchristopher21/DiscountLah",
-        link: "https://drive.google.com/file/d/1X5QG69LH66FvmuajtEsuszGX2tnTiP-Z/view"
+        github: "https://www.marinachain.io/marinanet",
+        link: "https://www.marinachain.io/marinanet",
     }
+    // },
+    // {
+    //     display: "left",
+    //     title: "DiscountLah",
+    //     subtitle: "A one-stop app for managing your coupons",
+    //     image: discountlah,
+    //     description: [
+    //         "Integrated Google Maps API with current location",
+    //         "Awarded Advanced level (Apollo) for NUS CP2106 Orbital",
+    //     ],
+    //     stackLogos: [
+    //         "React Native", "Firebase", "Google Maps"
+    //     ],
+    //     github: "https://github.com/jasonchristopher21/DiscountLah",
+    //     link: "https://drive.google.com/file/d/1X5QG69LH66FvmuajtEsuszGX2tnTiP-Z/view"
+    // }
 ]
 
 export const otherProjects = [

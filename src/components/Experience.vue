@@ -42,7 +42,7 @@ function viewLink(link: string) {
         <!-- Content -->
         <div v-for="page in experience[pageNumber]" class="py-5 px-20">
             <div class="flex gap-10">
-                <div class="items-center">
+                <div class="items-center flex-none w-20">
                     <div class="ring-4 ring-white ring-offset-4 ring-offset-grey-300 rounded-full z-20">
                         <img :src="page.image" class="w-20 h-20 mt-1 rounded-full z-20">
                     </div>
@@ -60,7 +60,7 @@ function viewLink(link: string) {
                     </div>
                     <div class="flex flex-col gap-1 text-[20px] font-metropolis font-medium text-white">
                         <div v-for="text in page.description" class="flex gap-4">
-                            <img :src="arrow_icon" class="w-3.5 my-auto" />
+                            <img :src="arrow_icon" class="w-3.5 my-auto flex-none mt-1" />
                             <span class="my-auto">{{ text }}</span>
                         </div>
                     </div>
@@ -114,7 +114,7 @@ function viewLink(link: string) {
                     </div>
                     <div :class="`${styles.paragraph} flex flex-col gap-1`">
                         <div v-for="text in page.description" class="flex gap-4">
-                            <img :src="arrow_icon" class="w-3.5 my-auto" />
+                            <img :src="arrow_icon" class="w-3.5 my-auto flex-none mt-0.5" />
                             <span class="my-auto">{{ text }}</span>
                         </div>
                     </div>

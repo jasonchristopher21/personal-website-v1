@@ -16,7 +16,7 @@ export default {
         return {
             typeValue: '',
             typeStatus: false,
-            typeArray: ['Fullstack Developer', 'Computer Science Student', 'Teaching Enthusiast', 'Aviation Enthusiast ✈️'],
+            typeArray: ['Fullstack Developer', 'Cloud Engineer', 'Aviation Enthusiast ✈️'],
             typingSpeed: 100,
             erasingSpeed: 30,
             newTextDelay: 3000,

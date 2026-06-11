@@ -14,16 +14,13 @@ import styles from "@/style"
         <!-- Paragraph -->
         <div :class="`${styles.paragraph} flex flex-col gap-7 xl:w-[60%] mt-10 text-justify`">
             <p>
-                I am a penultimate computer science undergraduate at the National University of Singapore. I am passionate
-                about building software that solves real-world problems and improves the lives of others.
+                I am passionate about solving complex problems through technology. Whether it's building software, exploring the inner workings of distributed systems, or streamlining operational processes, I am driven by the challenge of turning ideas into practical solutions that create real-world impact.
             </p>
             <p>
-                During my internship, I have worked around <span class="font-bold text-green">Fullstack Development</span>,
-                handling both frontend and backend endpoint management.
-                I am also interested in <span class="font-bold text-yellow">Machine Learning</span> and <span
-                    class="font-bold text-blue-100">Natural Language Processing</span>,
-                worked on projects that involve them, such as building a search engine by prioritising query relevance and
-                an open-source plagiarism detection software.
+                Currently, I work as a <span class="font-bold text-green">Cloud Operations Engineer</span>, where I focus on cloud infrastructure, platform operations, automation, and reliability engineering. 
+            </p>
+            <p>
+                Previously, during my internship and side projects, I gained experience in <span class="font-bold text-yellow">full-stack development</span>, working across both frontend and backend systems to design, develop, and maintain end-to-end application features and APIs.
             </p>
         </div>
 
